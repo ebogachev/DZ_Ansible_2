@@ -1,6 +1,7 @@
+
 ---
-- name: Provisioning build
-  hosts: build
+- name: install nginx
+  hosts: all
   become: yes
   
   roles:

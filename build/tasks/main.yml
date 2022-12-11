@@ -1,0 +1,14 @@
+---
+# tasks file for build
+- name: Install OpenJDK, Maven, Git
+  apt: name={{item}} state=present
+  with_items:
+    - default-jdk
+    - maven
+    - git
+
+- name: Clone git project
+  git:
+   repo: https://github.com/koddas/war-web-project.git
+   clone: yes
+   dest: "{{ dest_for_clone_git_repo }}"
