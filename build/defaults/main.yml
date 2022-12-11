@@ -1,0 +1,3 @@
+---
+# defaults file for build
+dest_clone_git: /tmp/war-web-project

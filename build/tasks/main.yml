@@ -11,4 +11,9 @@
   git:
    repo: https://github.com/koddas/war-web-project.git
    clone: yes
-   dest: "{{ dest_for_clone_git_repo }}"
+   dest: "{{ dest_clone_git }}"
+
+- name: Build project
+  shell: mvn package
+  args:
+    chdir: "{{ dest_clone_git }}"
