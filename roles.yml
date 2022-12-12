@@ -6,3 +6,10 @@
   
   roles:
    - build
+
+- name: Launch project
+  hosts: prod
+  become: yes
+
+  roles:
+   - prod

@@ -1,0 +1,4 @@
+---
+# defaults file for prod
+dest_war_file: /tmp/war-web-project/target/wwp-1.0.0.war
+dest_tomcat_webapp: /var/lib/tomcat9/webapps/wwp-1.0.0.war
